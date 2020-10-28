@@ -1,0 +1,9 @@
+##REPORTS##
+default: -p no_cloud_report -p allure -p bdd
+no_cloud_report: --publish-quiet
+html: --format html -o reports/features_report.html
+bdd: --format pretty
+allure: --format AllureCucumber::CucumberFormatter --out=reports
+## REPORTS ##
+
+
